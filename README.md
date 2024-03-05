@@ -1,2 +1,2 @@
 # UNIFOR
-Repositório das disciplinas
+Repositório da disciplina de Raciocínio Lógico Algorítmico
