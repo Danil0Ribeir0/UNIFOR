@@ -8,7 +8,7 @@ flowchart TD
 A([INÍCIO]) --> B{{"Digite um número:"}}
 B --> C[\numero\]
 C --> D{numero > 0}
-D --NÃO--> E["O número não é positivo"]
+D --NÃO--> E{{"O número não é positivo"}}
 D --SIM--> F[R = numero % 2]
 E --> Z([FIM])
 F --> G{R == 0}
