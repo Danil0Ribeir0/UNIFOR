@@ -48,10 +48,10 @@ G --> Z([FIM])
 3 ESCREVA "Digite seu salário atual: "
 4 LEIA salario
 5 SE salario <= 500
-6 		ENTÃO n_salario = salario * 1.2
+6 	ENTÃO n_salario = salario * 1.2
 7 SENÃO
-8 		n_salario = salario * 1.1
-9 		ESCREVA "Este é o seu novo salário: "n_salario
+8 	n_salario = salario * 1.1
+9 	ESCREVA "Este é o seu novo salário: "n_salario
 10 FIM_ALGORITMO
 ```
 
