@@ -2,6 +2,9 @@
 **Nome**: Danilo Ribeiro
 
 **Disciplina**: Raciocínio Lógico Algorítmico
+### Fluxograma 1 (MÉDIA)
+
+
 ### Fluxograma 3 (PAR ou IMPAR)
 ```mermaid
 flowchart TD
