@@ -7,15 +7,27 @@
 flowchart TD
 A([INÍCIO]) --> B{{"Digite dois números:"}}
 B --> C[\N1, N2\]
-C --> D[média = N1+N2/2]
-D --> E{média >= 7}
+C --> D[media = N1+N2/2]
+D --> E{media >= 7}
 E --NÃO--> F{{"Aluno Reprovado"}}
 E --SIM--> G{{"Aluno Aprovado"}}
 F --> Z([FIM])
 G --> Z
 ```
 ### Pseudocódigo 1
-
+```
+1 ALGORITMO media
+2 DECLARE N1, N2, media NUMERICO
+3 ESCREVA "Digite dois números"
+4 LEIA N1, N2, 
+5 media = N1+N2/2
+6 SE media >= 7
+7 	ENTÃO ESCREVA "Aluno Aprovado"
+8 SENÃO
+9 	ESCREVA "Aluno Reprovado"
+10 FIM_ALGORITMO
+```
+### Fluxograma 2 (SALÁRIO)
 
 ### Fluxograma 3 (PAR ou IMPAR)
 ```mermaid
