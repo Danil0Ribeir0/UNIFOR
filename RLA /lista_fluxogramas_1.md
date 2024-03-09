@@ -3,6 +3,19 @@
 
 **Disciplina**: Raciocínio Lógico Algorítmico
 ### Fluxograma 1 (MÉDIA)
+```mermaid
+flowchart TD
+A([INÍCIO]) --> B{{"Digite dois números:"}}
+B --> C[\N1, N2\]
+C --> D[média = N1+N2/2]
+D --> E{média >= 7}
+E --NÃO--> F{{"Aluno Reprovado"}}
+E --SIM--> G{{"Aluno Aprovado"}}
+F --> Z([FIM])
+G --> Z
+```
+### Pseudocódigo 1
+
 
 ### Fluxograma 3 (PAR ou IMPAR)
 ```mermaid
@@ -19,7 +32,7 @@ G --SIM--> I{{Este número é par}}
 H --> Z
 I --> Z
 ```
-### Pseudocódigo
+### Pseudocódigo 3
 ```
 1 ALORITMO par_impar
 2 DECLARE numero, R NUMERICO 
