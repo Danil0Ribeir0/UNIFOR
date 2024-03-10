@@ -41,7 +41,7 @@ E --> G{{"Este é o seu novo salário:" n_salario}}
 F --> G
 G --> Z([FIM])
 ```
-### Pseudocódigo
+### Pseudocódigo 2
 ```
 1 ALGORITMO salario
 2 DECLARE salario, n_salario NUMERICO
@@ -54,7 +54,6 @@ G --> Z([FIM])
 9 	ESCREVA "Este é o seu novo salário: "n_salario
 10 FIM_ALGORITMO
 ```
-
 ### Fluxograma 3 (PAR ou IMPAR)
 ```mermaid
 flowchart TD
@@ -86,3 +85,32 @@ I --> Z
 12 	ESCREVA "O número não é positivo
 13 FIM_ALGORITMO
 ```
+### Fluxograma 4 (CNH)
+```mermaid
+flowchart TD
+A([INÍCIO]) --> B{{"Digite sua idade aqui: "}}
+B --> C[\idade\]
+C --> D{idade >= 18}
+D --NÃO--> E[resto = 18 - idade]
+E --> F{{"Falta(m) resto ano(s) 
+para que possa tirar a CNH"}}
+D --SIM--> G{{"Você está apto a 
+tirar a CNH"}}
+G --> Z([FIM])
+F --> Z
+```
+### Pseudocódigo 4
+```
+1 ALGORITMO cnh
+2 DECLARE idade, resto NUMERICO
+3 ESCREVA "Digite sua idade aqui: "
+4 LEIA idade
+5 SE idade >= 18
+6 	ENTÃO ESCREVA "Você está apto a tirar a CNH"
+7 SENÃO
+8 	resto = 18 - idade
+9 	ESCREVA "Falta(m)"resto"ano(s) para 
+10 	que possa tirar a CNH"
+11 FIM_ALGORITMO
+```
+
