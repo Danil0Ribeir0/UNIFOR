@@ -28,7 +28,7 @@ E --> F([FIM])
 |100|212|
 
 ## Exercício 3 (Chuva)
-Objetivo:
+Objetivo: Leia uma quantidade de chuva dada em polegadas e imprima o equivalente em milímetros.
 ### Fluxograma 3
 ```mermaid
 flowchart TD
