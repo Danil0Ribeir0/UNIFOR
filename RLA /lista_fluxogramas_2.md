@@ -1,3 +1,27 @@
+## Exercício 1 (Média)
+Objetivo: Calcule a média de quatro números inteiros dados.
+### Fluxograma 1
+```mermaid
+flowchart TD
+A([INÍCIO]) --> B{{"Digite quatro números inteiros: "}}
+B --> C[\N1, N2, N3, N4\]
+C --> D["media = (N1+N2+N3+N4)/4"]
+D --> E{{"A média é: "media}}
+E --> Z([FIM])
+```
+### Pseudocódigo
+```
+1 ALGORITMO media
+2 DECLARE N1, N2, N3, N4, media: int
+3 INICIO
+4 ESCREVA "Digite quatro números inteiros: "
+5 LEIA N1, N2, N3, N4
+6 media = (N1+N2+N3+N4)/4
+7 ESCREVA "A média é: "media
+8 FIM
+```
+### TESTE
+
 ## Exercício 2 (Fahrenheit)
 Objetivo: Leia uma temperatura dada na escala Celsius (C) e imprima o equivalente em Fahrenheit.
 ### Fluxograma 2
@@ -56,6 +80,14 @@ G --> Z
 ```
 ### TESTE
 
+## Exercício 4
+Objetivo: Prepare um algoritmo para ler o custo de fábrica do carro e imprimir o custo ao consumidor.  
+### Fluxograma 4
+
+
+## Exercício 4
+Objetivo: 
+### Fluxograma 4
 
 
 
