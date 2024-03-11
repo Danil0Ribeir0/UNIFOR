@@ -1,4 +1,4 @@
-### Exercício 2 (Fahrenheit)
+## Exercício 2 (Fahrenheit)
 Objetivo: Leia uma temperatura dada na escala Celsius (C) e imprima o equivalente em Fahrenheit.
 ### Fluxograma 2
 ```mermaid
@@ -26,5 +26,36 @@ E --> F([FIM])
 |0|32|
 |20|68|
 |100|212|
+
+## Exercício 3 (Chuva)
+Objetivo:
+### Fluxograma 3
+```mermaid
+flowchart TD
+A([INÍCIO]) --> B{{"Digite a quantidade de chuva atual (em polegadas): "}}
+B --> C[\chuva_pol\]
+C --> D{chuva_pol < 0}
+D --SIM--> E{{"Digite um valor maior que 0"}}
+E --> Z([FIM])
+D --NÃO--> F[chuva_mm = chuva_pol * 25,4]
+F --> G{{"A quantidade de chuva (em mm) é: "chuva_mm}}
+G --> Z
+```
+### Pseudocódigo 3
+```
+1 ALGORITMO chuva_mm
+2 DECLARE chuva_pol, chuva_mm: real
+3 INICIO
+4 ESCREVA "Digite a quantidade de chuva atual (em polegadas): "
+5 LEIA chuva_pol
+6 SE chuva_pol < 0
+7 	ESCREVA "Digite um valor maior que 0"
+8 SENÃO chuva_mm = chuva_pol * 25,4
+9 ESCREVA "A quantidade de chuva (em mm) é: "chuva_mm
+10 FIM
+```
+### TESTE
+
+
 
 
