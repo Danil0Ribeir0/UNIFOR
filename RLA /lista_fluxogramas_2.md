@@ -1,4 +1,4 @@
-## Exercício 1 (Média)
+## Exercício 1
 Objetivo: Calcule a média de quatro números inteiros dados.
 ### Fluxograma 1
 ```mermaid
@@ -9,7 +9,7 @@ C --> D["media = (N1+N2+N3+N4)/4"]
 D --> E{{"A média é: "media}}
 E --> Z([FIM])
 ```
-### Pseudocódigo
+### Pseudocódigo 1
 ```
 1 ALGORITMO media
 2 DECLARE N1, N2, N3, N4, media: int
@@ -22,7 +22,7 @@ E --> Z([FIM])
 ```
 ### TESTE
 
-## Exercício 2 (Fahrenheit)
+## Exercício 2
 Objetivo: Leia uma temperatura dada na escala Celsius (C) e imprima o equivalente em Fahrenheit.
 ### Fluxograma 2
 ```mermaid
@@ -51,7 +51,7 @@ E --> F([FIM])
 |20|68|
 |100|212|
 
-## Exercício 3 (Chuva)
+## Exercício 3
 Objetivo: Leia uma quantidade de chuva dada em polegadas e imprima o equivalente em milímetros.
 ### Fluxograma 3
 ```mermaid
@@ -83,11 +83,128 @@ G --> Z
 ## Exercício 4
 Objetivo: Prepare um algoritmo para ler o custo de fábrica do carro e imprimir o custo ao consumidor.  
 ### Fluxograma 4
+```mermaid
+flowchart TD
+A([INÍCIO]) --> B{{"Digite o custo de fábrica do seu carro: "}}
+B --> C[\custo_fab\]
+C --> D[n1_custo = custo_fab * 0.12]
+C --> E[n2_custo = custo_fab * 0.45]
+E & D --> F[c_final = n1_custo + n2_custo + custo_fab]
+F --> G{{"O custo final do carro é: "c_final}}
+G --> Z([FIM])
+```
+### Pseudocódigo 4
+```
+1 ALGORITMO carro
+2 DECLARE custo_fab, n1_custo, n2_custo, c_final: real
+3 INICIO
+4 ESCREVA "Digite o custo de fábrica do seu carro: "
+5 LEIA custo_fab
+6 n1_custo = custo_fab * 0.12
+7 n2_custo = custo_fab * 0.45
+8 c_final = n1_custo + n2_custo + custo_fab
+9 ESCREVA "O custo final do carro é: "c_final
+10 FIM
+```
+### TESTE
+
+## Exercício 5
+Objetivo: Calcule o quadrado de um número.
+### Fluxograma 5
+```mermaid
+flowchart TD
+A([INÍCIO]) --> B{{"Digite um número positivo: "}}
+B --> C[\num\]
+C --> D{num < 0}
+D --SIM--> E{{"Este número não é positivo."}}
+E --> Z([FIM])
+D --NÃO--> F[quadr = num * num]
+F --> G{{"O quadrado deste número é: "quadr}}
+G --> Z
+```
+### Pseudocódigo 5
+```
+1 ALGORITMO quadrado
+2 DECLARE num, quadr: int
+3 INICIO
+4 ESCREVA "Digite um número positivo: "
+5 LEIA num
+6 SE num < 0
+7 	ENTÃO ESCREVA "Este número não é positivo"
+8 SENÃO quadr = num * num
+9 ESCREVA "O quadrado deste número é: "quadr
+10 FIM
+```
+### TESTE
+
+## Exercício 6
+Objetivo: Prepare um algoritmo para ler o cardápio.
+### Fluxograma 6
+```mermaid
+flowchart TD
+A([INÍCIO]) --> B{{"Digite a quantidade de hambúrguer consumido: "}}
+B --> C{{"Digite a quantidade de cheeseburguer consumido: "}}
+C --> D{{"Digite a quantidade de fritas consumido: "}}
+D --> E{{"Digite a quantidade de refrigerante consumido: "}}
+E --> F{{"Digite a quantidade de milkshake consumido: "}}
+B --> G[\ham,che,fri,ref,mil\]
+C --> G
+D --> G
+E --> G
+F --> G
+G --> H["conta = (ham * 3)+(che * 2,5)+(fri * 2,5)+(mil * 3)+ref"]
+H --> I{{"O valor da conta é igual a: "conta}}
+I --> Z([FIM])
+```
+### Pseudocódigo 6
+```
+```
+### TESTE
+
+## Exercício 7
+Objetivo: Elabore um algoritmo para calcular o salário de um vendedor num dado mês.
+### Fluxograma 7
+```mermaid
+flowchart TD
+A([INÍCIO]) --> B{{"Digite o seu nome: "}}
+B --> C{{"Digite o número de carros vendidos: "}}
+C --> D{{"Digite o valor total das suas vendas: "}}
+B --> E[\nome, c_ven, total\]
+C --> E
+D --> E
+E --> F["salario = 500 + (50 * c_ven) + (total * 1.05)"]
+F --> G{{"Seu salário é: "salario}}
+G --> Z([FIM])
+```
+### Pseudocódigo 7
+```
+1 ALGORITMO carros
+2 DECLARE c_ven, total, salario: real
+3     nome: caractere
+4 INICIO
+5 ESCREVA "Digite o seu nome: "
+6 ESCREVA "Digite o número de carros vendidos: "
+7 ESCREVA "Digite o valor total das suas vendas: "
+8 LEIA nome, c_ven, total
+9 salario = 500 + (50 * c_ven) + (total * 1.05)
+10 ESCREVA "Seu salário é: "salario
+11 FIM
+```
+
+### TESTE
+
+## Exercício 8
+Objetivo: Calcule a média de um aluno na disciplina RLA.
+### Fluxograma 8
 
 
-## Exercício 4
-Objetivo: 
-### Fluxograma 4
+
+
+
+
+
+
+
 
 
 
