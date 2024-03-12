@@ -119,6 +119,7 @@ G --> Z([FIM])
 |-|-|-|-|
 |1000|450|120|1570
 |20000|9000|2400|31400
+|60000|27000|7200|94200
 ## Exercício 5
 Objetivo: Calcule o quadrado de um número.
 ### Fluxograma 5
