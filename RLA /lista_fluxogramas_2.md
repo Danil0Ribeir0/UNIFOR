@@ -158,6 +158,18 @@ I --> Z([FIM])
 ```
 ### Pseudocódigo 6
 ```
+1 ALGORITMO cardapio
+2 DECLARE ham,che,fri,ref,mil: int
+3 INICIO
+4 ESCREVA "Digite a quantidade de hambúrguer consumido: "
+5 ESCREVA "Digite a quantidade de cheeseburguer consumido: "
+6 ESCREVA "Digite a quantidade de fritas consumido: "
+7 ESCREVA "Digite a quantidade de refrigerante consumido: "
+8 ESCREVA "Digite a quantidade de milkshake consumido: "
+9 LEIA ham,che,fri,ref,mil
+10 conta = (ham * 3)+(che * 2,5)+(fri * 2,5)+(mil * 3)+ref
+11 ESCREVA "O valor da conta é igual a: "conta
+12 FIM
 ```
 ### TESTE
 
@@ -180,7 +192,7 @@ G --> Z([FIM])
 ```
 1 ALGORITMO carros
 2 DECLARE c_ven, total, salario: real
-3     nome: caractere
+3       nome: caractere
 4 INICIO
 5 ESCREVA "Digite o seu nome: "
 6 ESCREVA "Digite o número de carros vendidos: "
@@ -190,21 +202,83 @@ G --> Z([FIM])
 10 ESCREVA "Seu salário é: "salario
 11 FIM
 ```
-
 ### TESTE
 
 ## Exercício 8
 Objetivo: Calcule a média de um aluno na disciplina RLA.
 ### Fluxograma 8
+```mermaid
+flowchart TD
+A([INÍCIO]) --> B{{"Digite o seu nome: "}}
+B --> C{{"Digite a nota da prova: "}}
+C --> D{{"Digite a nota da qualitativa: "}}
+B --> E[\nome, n_prov, n_qual\]
+C --> E
+D --> E
+E --> F["media = 2(n_prov) + n_qual/2"]
+F --> G{{"Sua média em RLA é: "media}}
+G --> Z([FIM])
+```
+### Pseudocódigo 8
+```
+1 ALGORITMO rla 
+2 DECLARE n_prov, n_qual: real
+3 		nome: caractere
+4 INICIO
+5 ESCREVA "Digite o seu nome: "]
+6 ESCREVA "Digite a nota da prova: "
+7 ESCREVA "Digite a nota da qualitativa: "
+8 LEIA nome, n_prov, n_qual
+9 media = 2(n_prov) + n_qual/2
+10 ESCREVA "Sua média em RLA é: "media
+11 FIM
+```
+### TESTE
 
+## Exercício 9
+Objetivo: Crie uma ficha preenchida com os dados do usuário.
+### Fluxograma 9
+```mermaid
+flowchart TD
+A([INÍCIO]) --> B{{"Digite o seu nome: "}}
+B --> C{{"Digite seu número de matrícula: "}}
+C --> D{{"Digite seu curso: "}}
+D --> E{{"Digite sua idade: "}}
+E --> F{{"Digite seu e-mail: "}}
+F --> G[\nome, matr, curs, idad, email\]
+B --> G
+C --> G
+D --> G
+E --> G
+G --> H{{"nome: nome
+matrícula: matr
+curso: curs
+idade: idad
+e-mail: email"}}
+H --> Z([FIM])
+```
+### Pseudocódigo 9
+```
+1 ALGORITMO fichario
+2 DECLARE matrícula, idade: int
+3 		nome, curso, e-mail: caractere
+4 INICIO
+5 ESCREVA "Digite o seu nome: "
+6 ESCREVA "Digite seu número de matrícula: "
+7 ESCREVA "Digite seu curso: "
+8 ESCREVA "Digite sua idade: "
+9 ESCREVA "Digite seu e-mail: "
+10 LEIA nome, matr, curs, idad, email
+11 ESCREVA "nome: nome
+12			matrícula: matr
+13			curso: curs
+14			idade: idad
+15			e-mail: email"
+16 FIM		
+```
+### TESTE
 
-
-
-
-
-
-
-
-
-
+## Exercício 10
+Objetivo:
+### Fluxograma 10
 
