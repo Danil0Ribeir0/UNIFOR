@@ -193,7 +193,6 @@ I --> Z([FIM])
 | 1 | 2 | 1 | 2 | 4 | 24,50 |
 | 2 | 3 | 3 | 4 | 3 | 34,00 |
 | 3 | 4 | 5 | 6 | 2 | 43,50 |
-| 4 | 5 | 7 | 8 | 1 | 53,00 |
 ## Exercício 7
 Objetivo: Elabore um algoritmo para calcular o salário de um vendedor num dado mês.
 ### Fluxograma 7
