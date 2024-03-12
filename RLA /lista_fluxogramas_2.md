@@ -219,7 +219,11 @@ G --> Z([FIM])
 11 FIM
 ```
 ### TESTE
-
+|nome|c_ven|total|salario
+|-|-|-|-
+|Danilo|20|187900|198795
+|Danilo|12|143000|151250
+|Danilo|8|98000|103800	
 ## Exercício 8
 Objetivo: Calcule a média de um aluno na disciplina RLA.
 ### Fluxograma 8
