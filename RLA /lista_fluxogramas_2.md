@@ -21,7 +21,11 @@ E --> Z([FIM])
 8 FIM
 ```
 ### TESTE
-
+|N1|N2|N3|N4|somatória| media |
+|-|-|-|-|-|-|
+|1|5|9|13|28|7
+|2|6|10|14|32|8
+|3|7|11|15|36|9
 ## Exercício 2
 Objetivo: Leia uma temperatura dada na escala Celsius (C) e imprima o equivalente em Fahrenheit.
 ### Fluxograma 2
@@ -79,7 +83,11 @@ G --> Z
 10 FIM
 ```
 ### TESTE
-
+|Polegadas (pol)|milímetro (mm)|
+|-|-|
+|1|25,4|
+|50|1270|
+|200|5080|
 ## Exercício 4
 Objetivo: Prepare um algoritmo para ler o custo de fábrica do carro e imprimir o custo ao consumidor.  
 ### Fluxograma 4
@@ -107,7 +115,10 @@ G --> Z([FIM])
 10 FIM
 ```
 ### TESTE
-
+|custo de fábrica |imposto|distribuidor|custo final
+|-|-|-|-|
+|1000|450|120|1570
+|20000|9000|2400|31400
 ## Exercício 5
 Objetivo: Calcule o quadrado de um número.
 ### Fluxograma 5
@@ -136,7 +147,11 @@ G --> Z
 10 FIM
 ```
 ### TESTE
-
+|número|número ao quadrado|
+|-|-|
+|2|4|
+|10|100|
+|50|2500|
 ## Exercício 6
 Objetivo: Prepare um algoritmo para ler o cardápio.
 ### Fluxograma 6
@@ -270,10 +285,10 @@ H --> Z([FIM])
 9 ESCREVA "Digite seu e-mail: "
 10 LEIA nome, matr, curs, idad, email
 11 ESCREVA "nome: nome
-12			matrícula: matr
-13			curso: curs
-14			idade: idad
-15			e-mail: email"
+12	matrícula: matr
+13	curso: curs
+14	idade: idad
+15	e-mail: email"
 16 FIM		
 ```
 ### TESTE
@@ -304,7 +319,7 @@ G --> Z([FIM])
 7 peri = 2 * π * raio
 8 LEIA area, peri
 9 ESCREVA "A área do círculo é: area
-		seu perímetro é: peri"
+	seu perímetro é: peri"
 10 FIM
 ```
 ### Teste
