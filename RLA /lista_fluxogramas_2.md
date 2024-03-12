@@ -281,4 +281,30 @@ H --> Z([FIM])
 ## Exercício 10
 Objetivo:
 ### Fluxograma 10
-
+```mermaid
+flowchart TD
+A([INÍCIO]) --> B{{"Digite o raio do círculo: "}}
+B --> C[\raio\]
+C --> D["area = π * raio^2"]
+C --> E["peri = 2 * π * raio"]
+D --> F[\area, peri\]
+E --> F
+F --> G{{"A área do círculo é: area
+		seu perímetro é: peri"}}
+G --> Z([FIM])
+```
+### Pseudocódigo 10
+```
+1 ALGORITMO circulo
+2 DECLARE raio, area, peri: real
+3 INICIO
+4 ESCREVA "Digite o raio do círculo: "
+5 LEIA raio
+6 area = π * raio^2
+7 peri = 2 * π * raio
+8 LEIA area, peri
+9 ESCREVA "A área do círculo é: area
+		seu perímetro é: peri"
+10 FIM
+```
+### Teste
