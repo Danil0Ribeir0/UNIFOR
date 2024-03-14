@@ -51,9 +51,35 @@ E --> F([FIM])
 7 ESCREVA "A temperatura em Fahrenheit é: "F
 8 FIM
 ```
-### TESTE
+### Teste de mesa 2
 |Celsius (C°)|Fahrenheit (F°)|
 |      -     |       -       |
 |      0     |       32      |
 |     20     |       68      |
 |     100    |      212      |
+## Exercício 3
+Objetivo: Receba dois números reais e um operador e efetue a operação correspondente com os valores recebidos (operandos). O algoritmo deve retornar o resultado da operação selecionada simulando todas as operações de uma calculadora simples.
+### Fluxograma 3
+```mermaid
+flowchart TD
+A([INICIO]) --> B{{"Digite dois números: "}}
+B --> C[\N1,N2\]
+C --> D{{"Escolha uma das operações [+][-][*][/]: "}}
+D --> E[\op\]
+E --> F{"op == +"}
+	F --True--> G[res = N1 + N2]
+	G --> H{{"res"}}
+	F --False--> I{"op == -"}
+		I --True--> J[res = N1 - N2]
+		J --> H
+		I --False--> K{"op == *"}
+			K --True--> L[res = N1 * N2]
+			L --> H
+			K --False--> M{"op == /"}
+				M --True--> N{"N2 != 0"}
+				N --True--> O[res = N1/N2]
+				O --> H
+				N --False--> P{{"Digite um número maior que zero"}}
+P --> Z([FIM])
+H --> Z
+```
