@@ -83,3 +83,17 @@ E --> F{"op == +"}
 P --> Z([FIM])
 H --> Z
 ```
+### Pseudocódigo 3
+```
+1 ALGORITMO calculadora
+2 DECLARE N1, N2: real
+3	op: caractere
+4 INÍCIO
+5 ESCREVA "Digite dois números: "
+6 LEIA N1, N2
+7 ESCREVA "Escolha uma das operações [+][-][*][/]: "
+8 LEIA op
+9 SE op == +
+10	ENTÃO CALCULE res = N1 + N2
+11 SENÃO 
+```
