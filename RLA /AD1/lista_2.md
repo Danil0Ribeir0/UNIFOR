@@ -97,3 +97,9 @@ H --> Z
 10	ENTÃO CALCULE res = N1 + N2
 11 SENÃO 
 ```
+### Teste de mesa 3
+
+## Exercício 4
+Objetivo: Elaborar um algoritmo que, dada a idade, classifique nas categorias: infantil A (5 - 7 anos), infantil B (8 -10 anos), juvenil A (11 - 13 anos), juvenil B (14 -17 anos) e adulto (maiores que 18 anos).
+### Fluxograma 4
+
