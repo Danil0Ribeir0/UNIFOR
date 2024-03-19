@@ -124,7 +124,28 @@ H --> Z
 ## Exercício 4
 Objetivo: Elaborar um algoritmo que, dada a idade, classifique nas categorias: infantil A (5 - 7 anos), infantil B (8 -10 anos), juvenil A (11 - 13 anos), juvenil B (14 -17 anos) e adulto (maiores que 18 anos).
 ### Fluxograma 4
-
+```mermaid
+flowchart TD
+A([INÍCIO])-->B{{"Digite a sua idade: "}}
+B --> C[\id\]
+C --> D{id <= 4}
+D --True--> E{{"Digite uma idade maior que 4"}}
+D --False--> F{5 >= id <= 7}
+F --True--> G{{"Você está no infantil A"}}
+F --False--> H{8 >= id <= 10}
+H --True--> I{{"Você está no infantil B"}}
+H --False--> J{11 >= id <= 13}
+J --True--> K{{"Você está no juvenil A"}}
+J --False--> L{14 >= id <= 17}
+L --True--> M{{"Você está no juvenil B"}}
+L --False--> N{{"Você está na categoria adulto"}}
+N --> Z([FIM])
+E --> Z
+G --> Z
+I --> Z
+K --> Z
+M --> Z
+```
 ### Pseudocódigo 4
 
 ### Teste de mesa 4
