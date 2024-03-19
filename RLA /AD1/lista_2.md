@@ -147,6 +147,32 @@ K --> Z
 M --> Z
 ```
 ### Pseudocódigo 4
-
+```
+1 ALGORITMO idades
+2 DECLARE id: int
+3 INICIO
+4 ESCREVA "Digite a sua idade: "
+5 LEIA id
+6 SE id <= 4
+7 	ENTÃO ESCREVA "Digite uma idade maior que 4"
+8 SENÃO SE 5 >= id <= 7
+9 	ENTÃO ESCREVA "Você está no infantil A"
+10 SENÃO SE 8 >= id <= 10
+11 	ENTÃO ESCREVA "Você está no infantil B"
+12 SENÃO SE 11 >= id <= 13
+13 	ENTÃO ESCREVA "Você está no juvenil A"
+14 SENÃO SE 14 >= id <= 17
+15 	ENTÃO ESCREVA "Você está no juvenil B"
+16 SENÃO ESCREVA "Você está na categoria adulto"
+17 FIM_SE
+18 FIM
+```
 ### Teste de mesa 4
-
+| id | id <= 4 | 5 >= id <= 7 | 8 >= id <= 10 | 11 >= id <= 13 | 14 >= id <= 17 | saída                         |
+|----|---------|--------------|---------------|----------------|----------------|-------------------------------|
+| 3  | True    | False        | False         | False          | False          | Digite uma idade maior que 4  |
+| 7  | False   | True         | False         | False          | False          | Você está no infantil A       |
+| 10 | False   | False        | True          | False          | False          | Você está no infantil B       |
+| 12 | False   | False        | False         | True           | False          | Você está no juvenil A        |
+| 17 | False   | False        | False         | False          | True           | Você está no juvenil B        |
+| 20 | False   | False        | False         | False          | False          | Você está na categoria adulto |
