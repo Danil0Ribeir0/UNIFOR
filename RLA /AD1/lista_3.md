@@ -7,17 +7,18 @@ Objetivo: Atualize o algoritmo para determinar se um número inteiro e positivo 
 ### Fluxograma 1
 ```mermaid
 flowchart TD
-A([inicio])-->B{{"digite um numero"}}
-B-->C[\n\]
-C-->D{n>=0}
-D--não-->E{{"digite um numero positivo"}}
-E-->J[\n\]
-J-->D
-D--sim-->F{n%2==0}
-F--não-->G{{"impar"}}
-F--sim-->H{{"par"}}
-G-->I([Fim])
-H-->I([Fim])
+A([INÍCIO]) --> B{{"Digite um número: "}}
+B --> C[\num\]
+C --> D{num >= 0}
+D --False--> E{{"Digite um numero positivo: "}}
+E --> J[\num\]
+J --> D
+D --True--> F[res = num % 2]
+F --> G{res == 0}
+G --True--> H{{"Este número é par."}}
+G --False--> I{{"Este número é impar"}}
+H --> Z([FIM])
+I --> Z
 ```
 ### Pseodocódigo 1
 ```
