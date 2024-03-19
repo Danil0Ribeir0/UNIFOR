@@ -36,7 +36,7 @@ I --> Z
 11 SENAO                                // caso inteiro for negativo (condição linha 5)
 12    ESCREVA "O número deve ser postivo!"
 13 FIM_SE
-13 FIM
+13 FIM_ALGORITMO
 ```
 #### Teste de mesa 1
 | numero | numero >= 0 | resto | resto == 0 | Saída |
@@ -73,7 +73,7 @@ G --> Z([FIM])
 8 	n_salario = salario * 1.1
 9 FIM_SE
 10 ESCREVA "Este é o seu novo salário: "n_salario
-11 FIM
+11 FIM_ALGORITMO
 ```
 #### Teste de mesa 2
 | salario | salario <= 500 | n_salario |
@@ -109,7 +109,7 @@ G --> Z
 8 	ENTÃO ESCREVA "Aluno Aprovado"
 9 SENÃO ESCREVA "Aluno Reprovado"
 10 FIM_SE
-11 FIM
+11 FIM_ALGORITMO
 ```
 #### Teste de mesa 3
 | N1 | N2 | media | media >= 7 |      saída      |
@@ -149,7 +149,7 @@ F --> Z
 10 	ESCREVA "Falta(m)"resto"ano(s) para 
 11 	que possa tirar a CNH"
 12  FIM_SE
-13 FIM
+13 FIM_ALGORITMO
 ```
 #### Teste de mesa 4
 |    nome   | idade | idade >= 18 | resto |                   saída                   |
