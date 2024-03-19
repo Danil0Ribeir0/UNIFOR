@@ -50,7 +50,7 @@ E --> F([FIM])
 5 LEIA celsius
 6 F = (9/5) * celsius + 32
 7 ESCREVA "A temperatura em Fahrenheit é: "F
-8 FIM
+8 FIM_ALGORITMO
 ```
 ### Teste de mesa 2
 |Celsius (C°)|Fahrenheit (F°)|
@@ -111,7 +111,7 @@ H --> Z
 23 		SENÃO ESCREVA "Digite um número maior que zero"
 24 		FIM_SE
 25 FIM_SE
-26 FIM
+26 FIM_ALGORITMO
 ```
 ### Teste de mesa 3
 | N1 | N2 | op | op == + | op == - | op == * | op == / | N2 != 0 | Saída                           |
@@ -165,7 +165,7 @@ M --> Z
 15 	ENTÃO ESCREVA "Você está no juvenil B"
 16 SENÃO ESCREVA "Você está na categoria adulto"
 17 FIM_SE
-18 FIM
+18 FIM_ALGORITMO
 ```
 ### Teste de mesa 4
 | id | id <= 4 | 5 >= id <= 7 | 8 >= id <= 10 | 11 >= id <= 13 | 14 >= id <= 17 | saída                         |
