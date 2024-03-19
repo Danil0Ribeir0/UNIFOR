@@ -36,7 +36,7 @@ LEIA n
 			ESCREVA"impar"
 		FIM_SE
 	FIM_SE
-FIM
+FIM_ALGORITMO
 ```
 ### Teste de mesa 1
 | entrada | negativo | positivo | impar | par | saida |
@@ -66,7 +66,7 @@ i<--0
 PARA i DE 1 ATÉ 30 PASSO 3 FAÇA
 ESCREAVA i
 FIM_PARA
-FIM
+FIM_ALGORITMO
 ```
 ### Teste de mesa 2
 0|3|6|9|12|15|18|21|24|27|30
@@ -101,7 +101,7 @@ soma<--0
 		LEIA n
 	FIM_ENQUANTO
 	ESCREVA soma
-FIM
+FIM_ALGORITMO
 ```
 ### Teste de mesa 3
 ordem|numero|n!=0|soma|saída
@@ -145,7 +145,7 @@ LEIA n
 	SENÃO 
 		ESCREVA soma/a
 	FIM_SE 
-FIM
+FIM_ALGORITMO
 ```
 ### Teste de mesa 4
 nota | é >=0 | soma | a | saída
