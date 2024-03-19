@@ -95,10 +95,31 @@ H --> Z
 8 LEIA op
 9 SE op == +
 10	ENTÃO CALCULE res = N1 + N2
-11 SENÃO 
+11	ESCREVA res
+12 SENÃO SE op == -
+13 	ENTÃO CALCULE res = N1 - N2
+14 	ESCREVA res
+15 SENÃO SE op == *
+16 	ENTÃO CALCULE res = N1 * N2
+17 	ESCREVA res
+18 SENÃO SE op == /
+19 	ENTÃO CALCULE res = N1 / N2
+20 		SE N2 != 0
+21 			ENTÃO CALCULE res = N1 / N2
+22 			ESCREVA res
+23 		SENÃO ESCREVA "Digite um número maior que zero"
+24 		FIM_SE
+25 FIM_SE
+26 FIM
 ```
 ### Teste de mesa 3
-
+| N1 | N2 | op | op == + | op == - | op == * | op == / | N2 != 0 | Saída                           |
+|----|----|----|---------|---------|---------|---------|:-------:|---------------------------------|
+| 10 | 1  | +  | True    | False   | False   | False   |    -    | 11                              |
+| 11 | 2  | -  | False   | True    | False   | False   |    -    | 9                               |
+| 12 | 3  | *  | False   | False   | True    | False   |    -    | 36                              |
+| 13 | 4  | /  | False   | False   | False   | True    |   True  | 3,25                            |
+| 14 | 0  | /  | False   | False   | False   | True    |  False  | Digite um número maior que zero |
 ## Exercício 4
 Objetivo: Elaborar um algoritmo que, dada a idade, classifique nas categorias: infantil A (5 - 7 anos), infantil B (8 -10 anos), juvenil A (11 - 13 anos), juvenil B (14 -17 anos) e adulto (maiores que 18 anos).
 ### Fluxograma 4
