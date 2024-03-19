@@ -76,6 +76,12 @@ G --> Z([FIM])
 11 FIM
 ```
 #### Teste de mesa 2
+| salario | salario <= 500 | n_salario |
+|---------|:--------------:|-----------|
+| 400     |      True      | 480       |
+| 500     |      True      | 600       |
+| 600     |      False     | 660       |
+| 1000    |      False     | 1100      |
 
 ## Exercício 03
 Objetivo: Represente, em fluxograma e pseudocódigo, um algoritmo para calcular a média aritmética entre duas notas de um aluno e mostrar sua situação, que pode ser aprovado ou reprovado.
@@ -106,7 +112,12 @@ G --> Z
 11 FIM
 ```
 #### Teste de mesa 3
-
+| N1 | N2 | media | media >= 7 |      saída      |
+|----|----|-------|------------|:---------------:|
+| 3  | 4  | 6     | False      | Aluno Reprovado |
+| 6  | 7  | 6,5   | False      | Aluno Reprovado |
+| 8  | 9  | 8,5   | True       |  Aluno Aprovado |
+| 7  | 7  | 7     | True       | Aluno Aprovado  |
 
 ## Exercício 04
 Objetivo: Represente, em fluxograma e pseudocódigo, um algoritmo que, a partir da idade do candidato(a), determinar se pode ou não tirar a CNH. Caso não atender a restrição de idade, calcular quantos anos faltam para o candidato estar apto.
@@ -141,8 +152,8 @@ F --> Z
 13 FIM
 ```
 #### Teste de mesa 4
-|nome  |idade|idade que falta|resultado|
-|--    |--   |--             |--       |
-|Hasten|18   |--             |pode tirar CNH|
-|Savio |16   |18-16=2        |faltam 2 anos para poder tirar CNH|
-|Clara |8    |18-8=10        |faltam 10 anos para poder tirar CNH|
+|    nome   | idade | idade >= 18 | resto |                   saída                   |
+|:---------:|:-----:|:-----------:|:-----:|:-----------------------------------------:|
+|   Danilo  |   18  |     True    |   -   |        Você está apto a tirar a CNH       |
+|   Jorge   |   17  |    False    |   1   |   Falta 1 ano para que possa tirar a CNH  |
+| Clarêncio |   5   |    False    |   13  | Faltam 13 anos para que possa tirar a CNH |
