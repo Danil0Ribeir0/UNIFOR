@@ -363,21 +363,18 @@ I --> Z
 ```
 ### Pseodocódigo 3.1
 ```
-ALGORITMO impar_par
-DECLARE n: INTEIRO
-INICIO
-ESCREVA "digite um numero"
-LEIA n
-	SE (n<0)ENTÃO
-		ESCREVA "numero negativo"
-	SENÃO
-		SE (n%2==0) ENTÃO
-			ESCREVA "par"
-		SENÃO 
-			ESCREVA"impar"
-		FIM_SE
-	FIM_SE
-FIM_ALGORITMO
+1 ALGORITMO impar_par
+2 DECLARE n: int
+3 INICIO
+4 ESCREVA "digite um numero"
+5 LEIA n
+6 SE n<0 ENTÃO
+7	ENTÃO ESCREVA "Digite um numero positivo: "
+8 SENÃO SE (n%2==0) ENTÃO
+9 	ENTÃO ESCREVA "Este número é par."
+10 SENÃO ESCREVA "Este número é impar"
+11 FIM_SE
+12 FIM_ALGORITMO
 ```
 ### Teste de mesa 3.1
 | entrada | negativo | positivo | impar | par | saida |
@@ -392,22 +389,22 @@ Objetivo: Faça um algoritmo que exiba na tela uma contagem de 0 até 30, exibin
 ### Fluxograma 3.2
 ```mermaid
 flowchart TD
-A([inicio])-->B[[i=0 até 30 passo 3]]
-B-->C{{i}}
-C-->B
-B-->D
-C-->D([Fim])
+A([INÍCIO]) --> B[i = 0]
+B --> C[[i ATE 30 PASSO 3]]
+C --> D{{i}}
+D --> C
+D --> Z([FIM])
 ```
 ### Pseudocódigo 3.2
 ```
-ALGORITMO multiplo
-DECLARE i: INTEIRO
-INICIO
-i<--0
-PARA i DE 1 ATÉ 30 PASSO 3 FAÇA
-ESCREAVA i
-FIM_PARA
-FIM_ALGORITMO
+1 ALGORITMO multiplo
+2 DECLARE i: int
+3 INICIO
+4 LEIA i = 0
+5 PARA i DE 0 ATÉ 30 [PASSO 3] FAÇA
+6 	ESCREAVA i
+7 FIM_PARA
+8 FIM_ALGORITMO
 ```
 ### Teste de mesa 3.2
 0|3|6|9|12|15|18|21|24|27|30
