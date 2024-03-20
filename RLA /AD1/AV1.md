@@ -7,3 +7,6 @@
 **Data:** 21/03/2024 <br>
 **Aluno(a):** Danilo Ribeiro Santos <br>
 **Matrícula:** 2416520 <br>
+
+## Avaliação Formativa
+### (Listas 1, 2 e 3)
