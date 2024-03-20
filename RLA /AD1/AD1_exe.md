@@ -16,7 +16,19 @@ H --> I{{"a =", a}}
 I --> J{{"b =", b}}
 ```
 ### Pseudocódigo 1
-
+```
+1 ALGORITMO valores
+2 INICIO
+3 ESCREVA "Digite o valor de a: "
+4 LEIA a
+5 ESCREVA "Digite o valor da b: "
+6 LEIA b
+7 a = aux
+8 a = b
+9 b = aux
+10 ESCREVA "a =", a
+11 ESCREVA "b =", b
+```
 #### Teste de mesa 1
 | a  | b  | aux | a  | b  | saída 1 | saída 2 | 
 | -- | -- | --  | -- | -- | --      | --      | 
@@ -43,7 +55,26 @@ J --> K
 K --LOOP--> F
 ```
 ### Pseudocódigo 2
-
+```
+1 ALGORITMO notas
+2 DECLARE n, i, cont: int
+3 INICIO
+4 ESCREVA "Digite o número de alunos: "
+5 LEIA n
+6 cont = 0
+7 i = 1
+8 SE i <= n
+9   ENTÃO ESCREVA "Digite a nota do aluno, i"
+10   LEIA nota
+11   SE nota >= 50 E nota <=100
+12      cont =+ 1
+13      i =+ 1
+14    SENÃO i =+ 1
+15    FIM_SE
+16 SENÃO ESCREVA "Número de alunos aprovados: cont"
+17 FIM_SE  
+18 FIM_ALGORITMO
+```
 ### Teste de mesa 2
 | it | n  | i  | cont | i<=n  | nota, i | nota | nota_valida | cont+1 | i+1 | saída        | 
 | -- | -- | -- | --   | --    | --      | --   | --          | --     | --  | --           |
@@ -74,7 +105,26 @@ J --> K[i =+ 1]
 K --LOOP--> G
 ```
 ### Pseudocódigo 3
-
+```
+1 ALGORITMO contagem
+2 DECLARE n
+3 INICIO
+4 ESCREVA "Digite a quantidade de números<br> (n >= 0):"
+5 LEIA n
+6 SE n >= 0
+7   ENTAO soma = 0
+8   i = 1
+9   SE i <= n
+10     ENTAO ESCREVA "Digite um número: "
+11     LEIA num
+12     soma =+ num
+13     i =+ 1
+14  SENÃO ESCREVA "A soma dos numeros é , soma"
+15  FIM_SE 
+16 SENÃO ESCREVA "O valor deve ser maior ou igual a zero!"
+17 FIM_SE
+18 FIM_ALGORITMO
+```
 ### Teste de mesa 3
 | it | n  | n >= 0 | soma | i  | i <= n | num | soma =+ num  | saída                   |
 | -- | -- | --     | --   | -- | --     | --  | --           | --                      |
@@ -103,7 +153,25 @@ H --> I[S += termo]
 I --LOOP--> E
 ```
 ### Pseudocódigo 4
-
+```
+1 ALGORITMO somaserie
+2 DECLARE n, s, i: real
+3 INICIO
+4 ESCREVA "Digite o número de termos da série S: "
+5 LEIA n
+6 S = 0
+7 PARA <i> DE <0> ATE <n> [PASSO1] FAÇA
+8   numerador = 2 * i + 1
+9   LEIA numerador
+10  denominador = 2 * i + 2
+11  LEIA denominador
+12  termo = numerador / denominador
+13  LEIA termo
+14  S += termo
+15  FIM_PARA
+16 ESCREVA "Soma da série S é ," S
+17 FIM_ALGORITMO
+```
 ### Teste de mesa 4
 | it | n  | S  | i | numerador | denominador | termo | S += termo     | saída                  |
 | -- | -- | -- |-- | --        | --          | --    | --             | --                     |
