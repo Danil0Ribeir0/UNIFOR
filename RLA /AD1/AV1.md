@@ -8,8 +8,7 @@
 **Aluno(a):** Danilo Ribeiro Santos <br>
 **Matrícula:** 2416520 <br>
 
-## Avaliação Formativa
-### (Listas 1, 2 e 3)
+## Avaliação Formativa (listas 1, 2 e 3)
 ## Exercício 01
 Objetivo: Represente, em fluxograma e pseudocódigo, um algoritmo para determinar se um número inteiro e positivo é par ou impar.
 #### Fluxograma 1.1
@@ -498,3 +497,5 @@ nota | é >=0 | soma | a | saída
 5|sim|29|4
 9|sim|38|5
 -3|nao|38|5|7.6
+
+## Avaliação Diagnóstica
