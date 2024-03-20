@@ -407,8 +407,9 @@ D --> Z([FIM])
 8 FIM_ALGORITMO
 ```
 ### Teste de mesa 3.2
-0|3|6|9|12|15|18|21|24|27|30
+|etapa 1|etapa 2|etapa 3|etapa 4|etapa 5|etapa 6|etapa 7|etapa 8|etapa 9|etapa 10|etapa 11|
 |-|-|-|-|-|-|-|-|-|-|-|
+0|3|6|9|12|15|18|21|24|27|30
 
 ## Exercício 03
 Objetivo: Dada uma sequência de números inteiros, calcular a sua soma. Por exemplo, para a sequência {12, 17, 4, -6, 8, 0}, o seu programa deve escrever o número 35.
