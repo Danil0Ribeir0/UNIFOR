@@ -199,7 +199,23 @@ G --LOOP--> F
 H --> I
 ```
 ### Pseudocódigo 5
-
+```
+1 ALGORITMO fatorial
+2 DECLARE n, i, fator: int
+3 INICIO
+4 ESCREVA "Digite um numero inteiro nao-negativo:"
+5 LEIA n
+6 SE n >= 0
+7   ENTAO fator = 1
+8   PARA <i> DE <1> ATE n PASSO <1> FAÇA
+9   LEIA i
+10  fator = fator * i
+11  LEIA fator
+12  FIM_PARA
+13 SENÃO ESCREVA "O valor deve ser maior ou igual a zero!"
+14 FIM_SE
+15 FIM_ALGORITMO
+```
 ### Teste de mesa 5
 | n  | fator | i  | fator = fator * i | saída               |
 | -- | --    | -- | --                | --                  |
@@ -224,7 +240,22 @@ H --> I[b = termo_atual]
 I --LOOP--> E 
 ```
 ### Pseudocódigo 6
-
+```
+1 ALGORITMO fibonacci
+2 DECLARE n_termos, n, i, a, b, termo_atual: int
+3 INICIO
+4 ESCREVA "Número de termos da série Fibonacci:"
+5 LEIA n_termos
+6 a = 0
+7 b = 1
+8 PARA <i> DE <1> ATE <n> PASSO <1> FAÇA 
+9   ESCREVA "a"
+10  termo_atual = a + b
+11  a = b
+12  b = termo_atual
+13  FIM_PARA
+14 FIM_ALGORITMO
+```
 ### Teste de mesa 6
 | it | n  | a  | b  | i  | saída | termo_atual = a + b | a = b | b = termo_atual |
 | -- | -- | -- | -- | -- | --    | --                  | --    | --              |
@@ -235,7 +266,7 @@ I --LOOP--> E
 | 4  | 5  | 3  | 5  | 5  | 3     | 3 + 5 = 8           | 5     | 8               |
 
 ## Questão 7
-Objetivo:
+Objetivo: Implemente e teste um algoritmo para inverter a ordem dos dígitos de um número inteiro positivo.
 ### Fluxograma 7
 ```mermaid
 flowchart TD
@@ -254,7 +285,24 @@ D --FALSE--> E{{O número deve ser positivo!}}
 E --> W
 ```
 ### Pseudocódigo 7
-
+```
+1 ALGORITMO inverter
+2 DECLARE num, digito, num_inv: int
+3 INICIO
+4 ESCREVA "Digite um número inteiro: "
+5 LEIA num
+6 SE num >= 0 ENTAO
+7   num_inv = 0
+8   ENQUANTO num > 0 FAÇA
+9     digito = num % 10
+10    num_inv = num_inv*10 + digito
+11    num = num//10
+12  FIM_ENQUANTO
+13  ESCREVA "Número invertido:", numero_inv
+14 SENÃO ESCREVA "O número deve ser positivo!"
+15 FIM_SE
+16 FIM_ALGORITMO
+```
 ### Teste de mesa 7
 | it | num | num_inv | num > 0 | digito | num = num // 10 | num_inv = (num_inv * 10) + digito | Saída                       |
 | -- | --  | --      | --     | --      | --              | --                                | --                          |
