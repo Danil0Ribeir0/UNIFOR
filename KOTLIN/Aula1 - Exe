@@ -1,0 +1,26 @@
+import kotlin.random.Random
+
+fun main() {
+    var pares: Int = 0
+    var impares: Int = 0
+
+    for (i in 1 .. 10) {
+        var randInt = Random.nextInt(1, 50)
+        println("Numero escolhido: "+ randInt)
+
+        if (randInt % 2 == 0) {
+            pares++
+        } else {
+            impares++
+        }
+    }
+    println("Pares: "+ pares)
+    println("Impares: "+ impares)
+}
+
+fun main() {
+    var dado: Int = Random.nextInt(1, 10)
+
+    println("Lançamento de dado: "+ dado)
+}
+
