@@ -1,5 +1,6 @@
 import kotlin.random.Random
 
+// exercício 1
 fun main() {
     var pares: Int = 0
     var impares: Int = 0
@@ -18,9 +19,36 @@ fun main() {
     println("Impares: "+ impares)
 }
 
+// exercício 2
 fun main() {
-    var dado: Int = Random.nextInt(1, 10)
+    var dado: Int = Random.nextInt(1, 6)
 
     println("Lançamento de dado: "+ dado)
 }
+
+// exercício 3
+class Pessoa {
+    var name: String = ""
+    var idade: Int = 0
+    var job: String = ""
+
+    constructor(name: String, idade: Int, job: String) {
+        this.name = name
+        this.idade = idade
+        this.job = job
+    }
+}
+
+fun main() {
+    var pessoa1 = Pessoa("Danilo", 20, "Programador")
+    println("O ${pessoa1.name} tem ${pessoa1.idade} anos de idade e trabalha como ${pessoa1.job}")
+
+    var pessoa2 = Pessoa("Gabriel", 19, "Bombeiro")
+    println("O ${pessoa2.name} tem ${pessoa2.idade} anos de idade e trabalha como ${pessoa2.job}")
+
+    var pessoa3 = Pessoa("Carol", 36, "Policial")
+    println("A ${pessoa3.name} tem ${pessoa3.idade} anos de idade e trabalha como ${pessoa3.job}")
+}
+
+// exercício 4
 
