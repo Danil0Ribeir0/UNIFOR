@@ -51,4 +51,63 @@ fun main() {
 }
 
 // exercício 4
+class Produto {
+    var nome: String = ""
+    var preco: Double = 0.0
+    var quant: Int = 0
 
+    constructor(nome: String, preco: Double, quant: Int) {
+        this.nome = nome
+        this.preco = preco
+        this.quant = quant
+    }
+
+    fun exibirDados() {
+        println("${this.nome}:")
+        println("Preço: ${this.preco} | Estoque: ${this.quant}")
+    }
+
+    fun atualizarPreco(n_preco: Double) {
+        if (n_preco > 0) {
+            this.preco = n_preco
+            println("Preço do ${this.nome} atualizado para R$ ${this.preco}")
+        } else {
+            println("Preço inválido.")
+        }
+    }
+
+    fun atualizarEstoque(n_quant: Int) {
+        if (n_quant > 0) {
+            this.quant = n_quant
+            println("Quantidade em estoque do ${this.nome} atualizada para ${this.quant}")
+        }
+    }
+}
+
+import java.util.*
+
+fun main() {
+    val scanner = Scanner(System.`in`)
+    var produto = Produto("Iphone 10", 3.000, 12)
+
+    var flag: Boolean = true
+    while (flag) {
+        when (scanner.nextInt()) {
+            1 -> {
+                produto.exibirDados()
+            }
+            2 -> {
+                var n_preco: Double = scanner.nextDouble()
+                produto.atualizarPreco(n_preco)
+            }
+            3 -> {
+                var n_quant: Int = scanner.nextInt()
+                produto.atualizarEstoque(n_quant)
+            }
+            4 -> {
+                println("Saindo...")
+                flag = false
+            }
+        }
+    }
+}
