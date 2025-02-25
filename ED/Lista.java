@@ -90,6 +90,47 @@ public class Lista {
     }
     
     public int removerPosicao(int index) {
+        if (listaVazia()) {
+            System.out.println("lista vazia, impossivel remover");
+            return 0;
+        } else {
+            if (index <= 0) {
+                return removerInicio();
+            } else if (index >= num_itens - 1) {
+                return removerFinal();
+            } else {
+                int elementoRemovido = vetor[index];
+                for (int i = index; i < num_itens - 1; i++) {
+                    vetor[i] = vetor[i + 1];
+                }
+                num_itens--;
+                return elementoRemovido;
+            }
+        }
+    }
 
+    public int retornaMeio(){
+        if (listaVazia()) {
+            System.out.println("Lista vazia!");
+            return 0;
+        } else if (num_itens % 2 == 0) {
+            System.out.println("Impossível, a lista não possui meio definitivo");
+            return 0;
+        }else {
+            int meio = (num_itens / 2) + 1;
+            return vetor[meio];
+        }
+    }
+
+    public void trocaPontas() {
+        if (listaVazia()) {
+            System.out.println("Lista está vazia");
+        } else {
+            int inicio = removerInicio();
+            int fim = removerFinal();
+
+            addInicio(fim);
+            addFinal(inicio);
+        }
     }
 }
