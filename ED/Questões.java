@@ -4,25 +4,24 @@ int range = sc.nextInt();
 
 Lista lista = new Lista(range);
 
-lista.addFinal(1);
-lista.addFinal(2);
-lista.addFinal(3);
+for(int i=3;i>0;i--) {
+    lista.addInicio(i);
+} //Lista: [1, 2, 3]
 
 System.out.println("Lista Original: "+lista);
 
 Pilha aux = new Pilha(range);
 
-aux.push(lista.removerInicio());
-aux.push(lista.removerInicio());
-aux.push(lista.removerInicio());
+while(!aux.pilhaCheia()) {
+    aux.push(lista.removerInicio());
+}
 
 System.out.println("Pilha Auxiliar: "+aux);
 
-lista.addFinal(aux.pop());
-lista.addFinal(aux.pop());
-lista.addFinal(aux.pop());
-
+while(!aux.pilhaVazia()) {
+    lista.addFinal(aux.pop());
+}
 
 System.out.println("Lista Invertida: "+lista);
-
+        
 sc.close();
