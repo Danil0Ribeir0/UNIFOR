@@ -133,4 +133,19 @@ public class Lista {
             addFinal(inicio);
         }
     }
+
+    public void removeRepetidos() {
+        for (int i=0;i<num_itens;i++) {
+            int eRemovido = vetor[0];
+            System.out.println("elemento removido: "+eRemovido);
+
+            for (int j=1;j<num_itens;j++) {
+                if (eRemovido == vetor[j]) {
+                    System.out.println("vetor j: "+j);
+                    removerPosicao(j);
+                }
+            }
+        }
+        System.out.println("Lista sem repetidos: "+ Arrays.toString(vetor));
+    }
 }
