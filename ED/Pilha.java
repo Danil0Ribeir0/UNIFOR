@@ -47,4 +47,21 @@ public class Pilha {
     public int top() {
         return vetor[num_itens];
     }
+
+    public void palindromo() {
+        boolean palindromo = true;
+
+        for (int i=0;i<num_itens;i++) {
+            if (vetor[i] != pop()){
+                palindromo = false;
+                break;
+            }
+        }
+
+        if (palindromo) {
+            System.out.println("É um palíndromo");
+        } else {
+            System.out.println("Não é palíndromo");
+        }
+    }
 }
