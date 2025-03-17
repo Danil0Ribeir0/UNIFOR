@@ -50,4 +50,18 @@ public class Fila {
             return eRemovido;
         }
     }
+    
+    public void removerCauda(int range) {
+        Fila filaAux = new Fila(range);
+
+        if (filaVazia()) {
+            System.out.println("fila vazia, impossivel realizar ação");
+        } else {
+            for(int i = 0; i < num_itens - 1; i++){
+                int inicio = desenfilerar();
+                enfilerar(inicio);
+            }
+            desenfilerar();
+        }
+    }
 }
