@@ -51,9 +51,7 @@ public class Fila {
         }
     }
     
-    public void removerCauda(int range) {
-        Fila filaAux = new Fila(range);
-
+    public void removerCauda() {
         if (filaVazia()) {
             System.out.println("fila vazia, impossivel realizar ação");
         } else {
