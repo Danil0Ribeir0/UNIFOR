@@ -148,4 +148,27 @@ public class Lista {
         }
         System.out.println("Lista sem repetidos: "+ Arrays.toString(vetor));
     }
+
+    public void ordenarCrescente(int range) {
+        Lista aux = new Lista(range);
+
+        while (!listaVazia()) {
+            int menor = vetor[0];
+            int indexMenor = 0;
+
+            for (int i = 1; i < num_itens; i++) {
+                if (vetor[i] < menor) {
+                    menor = vetor[i];
+                    indexMenor = i;
+                }
+            }
+
+            aux.addFinal(menor);
+            removerPosicao(indexMenor);
+        }
+
+        for (int i = 0; i < aux.num_itens; i++) {
+            addFinal(aux.vetor[i]);
+        }
+    }
 }
